@@ -1,0 +1,8 @@
+node_modules
+runtime.json
+Thumbs.db
+npm-debug.log
+.project
+.settings
+.projecteCrud.log
+eCrud.log

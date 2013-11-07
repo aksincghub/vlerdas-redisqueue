@@ -1,0 +1,29 @@
+{
+  "name": "redisqueue",
+  "version": "0.1.1",
+  "description": "Redis Queue Implementation",
+  "keywords": [
+    "jms",
+    "redis",
+    "queue",
+    "message queue",
+    "activemq"
+  ],
+  "author": "Julian Jewel <julian@julianjewel.com>",
+  "main": "./redis.js",
+  "scripts": {
+    "test": "node ./test/test.js"
+  },
+  "dependencies": {
+    "underscore": ">=1.5.2",
+    "redis": ">=0.8.6",
+	"winston": ">=0.7.2",
+	"crypto-js": ">=3.1.2-1"
+  },
+  "devDependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/department-of-veterans-affairs/vlerdas-redisqueue.git"
+  }
+}
