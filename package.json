@@ -1,6 +1,6 @@
 {
   "name": "redisqueue",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Redis Queue Implementation",
   "keywords": [
     "jms",

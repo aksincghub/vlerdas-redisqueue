@@ -31,9 +31,10 @@ var RedisQueue = function (options, callback) {
                 logger.error("Received error", err);
                 throw err;
             }
-            var object;
+			
+			var object;
             logger.debug("Evicted from Queue:" + evt);
-            if (!_.isUndefined(options.encryption) && options.encryption.enabled) {
+            if (!_.isUndefined(options.encryption) && options.encryption.enabled && !_.isUndefined(evt) && !_.isEmpty(evt)) {
                 logger.debug("Decrypting Event..");
                 var decrypted = CryptoJS.AES.decrypt(evt, options.encryption.passPhrase, {
                         format : JsonFormatter
