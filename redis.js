@@ -50,7 +50,7 @@ var RedisQueue = function (options, callback) {
                 if (err) {
                     logger.error('Error occured, possible elements in processing queue ', err, evt);
                 } else {
-                    logger.info('Removing Event from Redis Processing Channel-' + options.host + ':' + options.port, options.processingChannel);
+                    logger.debug('Removing Event from Redis Processing Channel-' + options.host + ':' + options.port, options.processingChannel);
                     client.lrem(options.processingChannel, 1, evt);
                 }
                 logger.debug('Popping Data from ' + options.channel + ' into ' + options.processingChannel + ' with timeout ' + options.timeout);
